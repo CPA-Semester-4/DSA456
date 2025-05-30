@@ -40,6 +40,17 @@ Used to express **how resource usage grows** for large input sizes:
 
 ---
 
+### 📈 Growth Rates
+
+* **Constant (O(1))**: Resource use doesn't change with input size.
+* **Logarithmic (O(log n))**: Doubling input size adds a fixed resource chunk.
+* **Linear (O(n))**: One extra unit of input needs one extra resource unit.
+* **Loglinear (O(n log n))**: Seen in efficient sorting algorithms.
+* **Quadratic (O(n^2))**: Nested loops, e.g., bubble sort.
+* **Exponential (O(2^n))**: Growth explodes with input size.
+
+---
+
 ## 🛠 How to Analyze Code
 
 1. **Understand the logic** of the algorithm.
@@ -55,5 +66,13 @@ Imagine your algorithm is a car engine:
 
 * Analysis tells you **how much fuel (resources)** the engine will need **as the road (input size)** gets longer.
 * Asymptotic notation gives you a **mathematical fuel efficiency rating.**
+
+---
+
+### 🧠 Key Idea
+
+Algorithm analysis isn’t about exact time but **how time grows** as input grows.
+
+> "How much MORE time for n+1 elements? Not how much for n elements."
 
 ---
