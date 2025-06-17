@@ -1,7 +1,3 @@
-Here’s a formalized, simplified, and clear version of your notes in **Markdown (MD)** format:
-
----
-
 # 📊 Tables (Abstract Data Type - ADT)
 
 A **Table** is an abstract data type used to store **key-value pairs** (also called **records**).
@@ -137,13 +133,7 @@ insert(key, value) {
 
 ---
 
-Certainly! Here's the **pseudocode** version, written in a clean and structured format:
-
----
-
 # 📌 Linear Probing — Pseudocode Only
-
----
 
 ## 🔍 Search(key)
 
@@ -163,7 +153,7 @@ Certainly! Here's the **pseudocode** version, written in a clean and structured 
 * Compute index = hash value mod capacity
 * Loop starting at index:
 
-  * If slot is empty or marked as tombstone → insert (key, value) here → stop
+  * If slot is empty → insert (key, value) here → stop
   * Else → move to next index (circular)
 
 ---
@@ -214,11 +204,6 @@ Certainly! Here's the **pseudocode** version, written in a clean and structured 
 ---
 
 ## ⚰️ Tombstoning 
-
-
-Here's a clean and formalized **pseudocode version** of **Linear Probing with Tombstoning**, covering **Insertion, Search, and Removal**, along with key rules:
-
----
 
 ## ⚰️ Linear Probing with Tombstoning — Pseudocode
 
@@ -302,5 +287,3 @@ Loop starting at index (circularly):
 * **Insert** at first slot marked `EMPTY` or `DELETED`
 * **Search** stops only at `EMPTY`
 * **Remove** marks the slot as `DELETED`, not `EMPTY`
-
-Let me know if you’d like a flowchart or visual diagram of this too.
