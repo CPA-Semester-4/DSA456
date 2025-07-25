@@ -7,4 +7,7 @@
 | 3    | [Recursion](./Week-3/notes.md)                           | Recursive Thinking, Call Stack, Base and Recursive Cases             |
 | 4    | [Searching & Sorting Algorithms](./Week-4/notes.md) | Binary Search, Bubble Sort, Merge Sort, etc.                         |
 | 5    | [Lists](./Week-5/notes.md) | Lists, Linked Lists, Sentinals |
-| 5    | [Tables](./Week-6/notes.md) | Tables, HashTables, Closed Addressing - Chaining, Open Adressing - Linear Probing (Tombstoning) |
+| 6    | [Tables](./Week-6/notes.md) | Tables, HashTables, Closed Addressing - Chaining, Open Adressing - Linear Probing (Tombstoning) |
+| 7    | [Graphs](./Week-7/notes.md) | |
+| 8    | [Trees](./Week-8/notes.md) | |
+| 9    | [Heaps](./Week-9/notes.md) | |
