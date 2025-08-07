@@ -12,3 +12,4 @@
 | 8    | [Trees](./Week-9/notes.md) | |
 | 9    | [Heaps](./Week-10/notes.md) | |
 | 10   | [Binary Search Trees](./Week-11/notes.md) | |
+| 11   | [AVL, Read Black Trees](./Week-12/notes.md) | |
