@@ -8,6 +8,7 @@
 | 4    | [Searching & Sorting Algorithms](./Week-4/notes.md) | Binary Search, Bubble Sort, Merge Sort, etc.                         |
 | 5    | [Lists](./Week-5/notes.md) | Lists, Linked Lists, Sentinals |
 | 6    | [Tables](./Week-6/notes.md) | Tables, HashTables, Closed Addressing - Chaining, Open Adressing - Linear Probing (Tombstoning) |
-| 7    | [Graphs](./Week-7/notes.md) | |
-| 8    | [Trees](./Week-8/notes.md) | |
-| 9    | [Heaps](./Week-9/notes.md) | |
+| 7    | [Graphs](./Week-8/notes.md) | |
+| 8    | [Trees](./Week-9/notes.md) | |
+| 9    | [Heaps](./Week-10/notes.md) | |
+| 10   | [Binary Search Trees](./Week-11/notes.md) | |
