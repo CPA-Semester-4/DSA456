@@ -79,3 +79,19 @@ def maximum_element(self):
     return current.data  # Return the rightmost node's data
 ```
 </details>
+
+<details>
+<summary>Minimum element in BST</summary>
+
+```py
+  def minimum_element(self, self.root)
+    if self.root is None:
+      return None
+
+    curr = self.root
+    while curr.left is not None:
+      curr = curr.left
+
+    return curr.data
+```
+</details>
