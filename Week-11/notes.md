@@ -109,3 +109,42 @@ def _r_height(self, subtree):
     return max(self._r_height(subtree.left), self._r_height(subtree.right)) + 1
 ```
 </details>
+
+<details>
+<summary>Deleting a node from BST</summary>
+
+```py
+def delete_node(self, data):
+    self.root = self._r_delete_node(self.root, data)
+
+def _r_delete_node(self, subtree, data):
+    if subtree is None:
+        return None
+
+    if data < subtree.data:
+        subtree.left = self._r_delete_node(subtree.left, data)
+    elif data > subtree.data:
+        subtree.right = self._r_delete_node(subtree.right, data)
+    else:
+        # Case 1: No children
+        if subtree.left is None and subtree.right is None:
+            return None
+        # Case 2: One child
+        elif subtree.left is None:
+            return subtree.right
+        elif subtree.right is None:
+            return subtree.left
+        # Case 3: Two children
+        else:
+            # Find inorder successor (leftmost in right subtree)
+            curr = subtree.right
+            while curr.left is not None:
+                curr = curr.left
+            # Replace data with successor's data
+            subtree.data = curr.data
+            # Delete the successor
+            subtree.right = self._r_delete_node(subtree.right, curr.data)
+    
+    return subtree
+```
+</details>
