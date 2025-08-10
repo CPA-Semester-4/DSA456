@@ -1,7 +1,8 @@
-
+<h1>BST - Essential member function snippets</h1>
 
 <details>
 <summary>Breadth First</summary>
+<br/>
   
 ```py
 import queue
