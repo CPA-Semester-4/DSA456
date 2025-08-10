@@ -1,7 +1,7 @@
 <h1>BST - Essential member function snippets</h1>
 
 <details>
-<summary>Breadth First</summary>
+<summary>Breadth First Search</summary>
 <br/>
   
 ```py
@@ -29,7 +29,7 @@ def breadthFirstPrint(self):
 </details>
 
 <details>
-<summary></summary>
+<summary>Inserting a node - Recursive</summary>
 
 ```py
   def recursive_insert(self, data):
@@ -42,6 +42,26 @@ def breadthFirstPrint(self):
       subtree.left = self.r_insert(value, subtree.left)
     elif value > subtree.data:
       subtree.right = self.r_insert(value, subtree.right)
+```
+</details>
+
+<details>
+<summary>Searching a node - Recursive</summary>
+
+```py
+def recursive_search(self, data):
+    return self._r_search(self.root, data)  # Helper function starts from root
+
+def _r_search(self, subtree, data):
+    if subtree is None:  # Base case: value not found
+        return None
+    if data < subtree.data:
+        return self._r_search(subtree.left, data)  # Search left subtree
+    elif data > subtree.data:
+        return self._r_search(subtree.right, data)  # Search right subtree
+    else:
+        return subtree  # Found the node
+      
 ```
 </details>
   
