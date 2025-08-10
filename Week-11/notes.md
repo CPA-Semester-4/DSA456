@@ -65,3 +65,17 @@ def _r_search(self, subtree, data):
 ```
 </details>
   
+<details>
+<summary>Maximum element in BST</summary>
+
+```py
+def maximum_element(self):
+    if self.root is None:
+        return None  # Empty tree
+    
+    current = self.root
+    while current.right is not None:  # Traverse to the rightmost node
+        current = current.right
+    return current.data  # Return the rightmost node's data
+```
+</details>
