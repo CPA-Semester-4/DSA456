@@ -191,4 +191,26 @@ def inorder_successor(self, data):
     
     return successor  # Returns None if no successor exists
 ```
+
+<details>
+<summary>Print between</summary>
+
+```py
+  def print(self, min_val , max_val):
+    self.print_between(self.root, min_val, max_val)
+
+  def print_between(self, subtree, min_val, max_val):
+    if subtree is None:
+      return
+
+    if min_val < subtree.data:
+      self.print_between(subtree.left, min_val, max_val)
+
+    if min_val <= subtree.data  <= max_val:
+      print(subtree.data)
+
+    if subtree.data < max_val:
+      self.print_between(node.right, min_val, max_val)
+```
+</details>
 </details>
