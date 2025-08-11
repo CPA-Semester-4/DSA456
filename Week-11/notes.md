@@ -27,6 +27,25 @@ def print_bst(self)
 </details>
 
 <details>
+<summary>Searching a node - Iterative</summary>
+
+```py
+  def search(self, data):
+    if self.root is None:
+      return None
+  
+    curr = self.root
+    while curr is not None:
+      if data < curr.data:
+        curr = curr.left
+      elif data > curr.data:
+        curr = curr.right
+      else:
+        return curr
+```
+</details>
+
+<details>
 <summary>Inserting a node - Recursive</summary>
 
 ```py
@@ -38,8 +57,10 @@ def print_bst(self)
       return Node(value)
     elif value < subtree.data:
       subtree.left = self.r_insert(value, subtree.left)
+      return subtree
     elif value > subtree.data:
       subtree.right = self.r_insert(value, subtree.right)
+      return subtree
 ```
 </details>
 
