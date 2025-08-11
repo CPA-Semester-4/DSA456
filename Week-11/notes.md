@@ -166,3 +166,29 @@ def _r_delete_node(self, subtree, data):
     return subtree
 ```
 </details>
+
+<details>
+<summary>Inorder Successor</summary>
+
+```py
+def inorder_successor(self, data):
+    curr = self.root
+    successor = None  # Initialize to handle case where we never go left
+    
+    while curr is not None:
+        if data < curr.data:
+            successor = curr  # Potential successor
+            curr = curr.left
+        elif data > curr.data:
+            curr = curr.right
+        else:  # Node found
+            if curr.right:  # Case 1: Has right subtree
+                temp = curr.right
+                while temp.left:
+                    temp = temp.left
+                return temp
+            return successor
+    
+    return successor  # Returns None if no successor exists
+```
+</details>
