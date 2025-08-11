@@ -82,15 +82,14 @@ def maximum_element(self):
 <summary>Minimum element in BST</summary>
 
 ```py
-  def minimum_element(self, self.root)
+  def minimum_element(self):
     if self.root is None:
       return None
-
+    
     curr = self.root
     while curr.left is not None:
       curr = curr.left
-
-    return curr.data
+    return curr.data 
 ```
 </details>
 
