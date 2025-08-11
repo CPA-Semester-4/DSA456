@@ -7,23 +7,21 @@
 ```py
 import queue
 
-def breadthFirstPrint(self):
-  if(self.root):
-    q = queue.Queue()
-    
-  q.put(self.root)
+def print_bst(self)
+  nodes = queue.Queue()
 
-  while not q.empty():
-    current = q.get()
+  if self.root is not None
+    nodes.put(self.root)
 
-    if current.left:
-      q.put(current.left)
-    if current.right:
-      q.put(current.right)
+  while not nodes.empty():
+    curr = nodes.get()
 
-    print(current.data, end=", ")
-  print("Done")
-      
+    if curr.left:
+      nodes.put(curr.left)
+    if curr.right:
+      nodes.put(curr.right)
+
+    print(curr.data, end = "  ")
 ```
 
 </details>
