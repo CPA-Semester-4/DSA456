@@ -111,9 +111,6 @@ def _r_delete_node(self, subtree, data):
 ```
 </details>
 
-</details>
-
-
 <details>
 <summary>Print between</summary>
 
@@ -134,6 +131,8 @@ def _r_delete_node(self, subtree, data):
     if subtree.data < max_val:
       self.print_between(node.right, min_val, max_val)
 ```
+</details>
+
 </details>
 
 ---
