@@ -115,6 +115,21 @@ def maximum_element(self):
 </details>
 
 <details>
+<summary>Count number of nodes in BST</summary>
+
+```py
+  def count_nodes(self):
+    return self.r_count_nodes(self.root)
+
+  def r_count_nodes(self, subtree):
+    if subtree is None:
+      return 0
+
+    return 1 + self.r_count_nodes(subtree.left) + self.r_count_nodes(subree.right)
+```
+</details>
+
+<details>
 <summary>Height of a BST</summary>
 
 ```py
