@@ -1,52 +1,11 @@
 <h1>BST - Essential member function snippets</h1>
 
 <details>
-<summary>Breadth First Search</summary>
-<br/>
+  <summary>Resursive Code Implementations</summary>
+  <br/>
   
-```py
-import queue
-
-def print_bst(self)
-  nodes = queue.Queue()
-
-  if self.root is not None
-    nodes.put(self.root)
-
-  while not nodes.empty():
-    curr = nodes.get()
-
-    if curr.left:
-      nodes.put(curr.left)
-    if curr.right:
-      nodes.put(curr.right)
-
-    print(curr.data, end = "  ")
-```
-
-</details>
-
-<details>
-<summary>Searching a node - Iterative</summary>
-
-```py
-  def search(self, data):
-    if self.root is None:
-      return None
-  
-    curr = self.root
-    while curr is not None:
-      if data < curr.data:
-        curr = curr.left
-      elif data > curr.data:
-        curr = curr.right
-      else:
-        return curr
-```
-</details>
-
-<details>
-<summary>Inserting a node - Recursive</summary>
+  <details>
+    <summary>Inserting a node - Recursive</summary>
 
 ```py
   def recursive_insert(self, data):
@@ -83,6 +42,54 @@ def _r_search(self, subtree, data):
       
 ```
 </details>
+
+</details>
+
+<details>
+  <summary>Breadth First Search</summary>
+
+```py
+import queue
+
+def print_bst(self)
+  nodes = queue.Queue()
+
+  if self.root is not None
+    nodes.put(self.root)
+
+  while not nodes.empty():
+    curr = nodes.get()
+
+    if curr.left:
+      nodes.put(curr.left)
+    if curr.right:
+      nodes.put(curr.right)
+
+    print(curr.data, end = "  ")
+```
+
+</details>
+
+<details>
+<summary>Searching a node</summary>
+
+```py
+  def search(self, data):
+    if self.root is None:
+      return None
+  
+    curr = self.root
+    while curr is not None:
+      if data < curr.data:
+        curr = curr.left
+      elif data > curr.data:
+        curr = curr.right
+      else:
+        return curr
+```
+</details>
+
+
   
 <details>
 <summary>Maximum element in BST</summary>
