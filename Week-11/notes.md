@@ -54,7 +54,7 @@ def _r_search(self, subtree, data):
     if subtree is None:
       return 0
 
-    return 1 + self.r_count_nodes(subtree.left) + self.r_count_nodes(subree.right)
+    return 1 + self.r_count_nodes(subtree.left) + self.r_count_nodes(subtree.right)
 ```
 </details>
 
