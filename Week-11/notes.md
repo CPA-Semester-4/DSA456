@@ -67,7 +67,7 @@ def height_bst(self):
 
 def _r_height(self, subtree):
     if subtree is None:
-        return 0  # Base case: empty subtree has height 0
+        return -1  # Base case: empty subtree has height 0
     return max(self._r_height(subtree.left), self._r_height(subtree.right)) + 1
 ```
 </details>
