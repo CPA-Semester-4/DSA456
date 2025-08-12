@@ -43,84 +43,6 @@ def _r_search(self, subtree, data):
 ```
 </details>
 
-</details>
-
-<details>
-  <summary>Breadth First Search</summary>
-
-```py
-import queue
-
-def print_bst(self)
-  nodes = queue.Queue()
-
-  if self.root is not None
-    nodes.put(self.root)
-
-  while not nodes.empty():
-    curr = nodes.get()
-
-    if curr.left:
-      nodes.put(curr.left)
-    if curr.right:
-      nodes.put(curr.right)
-
-    print(curr.data, end = "  ")
-```
-
-</details>
-
-<details>
-<summary>Searching a node</summary>
-
-```py
-  def search(self, data):
-    if self.root is None:
-      return None
-  
-    curr = self.root
-    while curr is not None:
-      if data < curr.data:
-        curr = curr.left
-      elif data > curr.data:
-        curr = curr.right
-      else:
-        return curr
-```
-</details>
-
-
-  
-<details>
-<summary>Maximum element in BST</summary>
-
-```py
-def maximum_element(self):
-    if self.root is None:
-        return None  # Empty tree
-    
-    current = self.root
-    while current.right is not None:  # Traverse to the rightmost node
-        current = current.right
-    return current.data  # Return the rightmost node's data
-```
-</details>
-
-<details>
-<summary>Minimum element in BST</summary>
-
-```py
-  def minimum_element(self):
-    if self.root is None:
-      return None
-    
-    curr = self.root
-    while curr.left is not None:
-      curr = curr.left
-    return curr.data 
-```
-</details>
-
 <details>
 <summary>Count number of nodes in BST</summary>
 
@@ -186,6 +108,87 @@ def _r_delete_node(self, subtree, data):
             subtree.right = self._r_delete_node(subtree.right, curr.data)
     
     return subtree
+```
+</details>
+
+
+</details>
+
+<details>
+  <summary>Iterative Code Implementations</summary>
+  <br/>
+
+<details>
+  <summary>Breadth First Search</summary>
+
+```py
+import queue
+
+def print_bst(self)
+  nodes = queue.Queue()
+
+  if self.root is not None
+    nodes.put(self.root)
+
+  while not nodes.empty():
+    curr = nodes.get()
+
+    if curr.left:
+      nodes.put(curr.left)
+    if curr.right:
+      nodes.put(curr.right)
+
+    print(curr.data, end = "  ")
+```
+
+</details>
+
+<details>
+<summary>Searching a node</summary>
+
+```py
+  def search(self, data):
+    if self.root is None:
+      return None
+  
+    curr = self.root
+    while curr is not None:
+      if data < curr.data:
+        curr = curr.left
+      elif data > curr.data:
+        curr = curr.right
+      else:
+        return curr
+```
+</details>
+
+<details>
+<summary>Maximum element in BST</summary>
+
+```py
+def maximum_element(self):
+    if self.root is None:
+        return None  # Empty tree
+    
+    current = self.root
+    while current.right is not None:  # Traverse to the rightmost node
+        current = current.right
+    return current.data  # Return the rightmost node's data
+```
+</details>
+
+<details>
+<summary>Minimum element in BST</summary>
+
+```py
+  def minimum_element(self):
+    if self.root is None:
+      return None
+    
+    curr = self.root
+    while curr.left is not None:
+      curr = curr.left
+    return curr.data 
 ```
 </details>
 
