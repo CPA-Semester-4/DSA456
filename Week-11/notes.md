@@ -1,7 +1,7 @@
 <h1>BST - Essential member function snippets</h1>
 
 <details>
-  <summary>Resursive Code Implementations</summary>
+  <summary>👉🏻 Resursive Code Implementations</summary>
   <br/>
   
   <details>
@@ -138,7 +138,7 @@ def _r_delete_node(self, subtree, data):
 ---
 
 <details>
-  <summary>Iterative Code Implementations</summary>
+  <summary>👉🏻 Iterative Code Implementations</summary>
   <br/>
 
 <details>
