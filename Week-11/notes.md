@@ -133,6 +133,26 @@ def _r_delete_node(self, subtree, data):
 ```
 </details>
 
+<details>
+<summary>is same</summary>
+
+```py
+    def is_same(self, other_tree):
+        return self.r_is_same(self.root, other_tree)
+    
+    def r_is_same(self, subtree, other_subtree):
+        if subtree is None and other_subtree is None:
+            return True
+        if subtree is None or other_subtree is None:
+            return False
+
+        if subtree.data != other_subtree.data:
+            return False
+
+        return (self.r_is_same(subtree.left, other_subtree.left) and self.r_is_same(subtree.right, other_subtree.right))
+```
+</details>
+
 </details>
 
 ---
