@@ -261,3 +261,28 @@ def inorder_successor(self, data):
 ```
 
 </details>
+
+<details>
+<summary>Find Parent</summary>
+
+```py
+def find_parent(self, v):
+    if self.root is None or self.root.data == v:
+        return -1
+    
+    current = self.root
+    parent = -1
+    
+    while current is not None:
+        if v < current.data:
+            parent = current.data
+            current = current.left
+        elif v > current.data:
+            parent = current.data
+            current = current.right
+        else:
+            return parent  # Found the node
+    
+    return -1  # Value not found
+```
+</details>
