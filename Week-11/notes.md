@@ -286,3 +286,32 @@ def find_parent(self, v):
     return -1  # Value not found
 ```
 </details>
+
+<details>
+<summary>Remove Biggest</summary>
+  
+```py
+def remove_biggest(self, v):
+  subtree = self.search(v)
+
+  if subtree is None:
+    return False
+  if subtree.right is not None:
+    return False
+
+  parent = subtree
+  curr = subtree
+
+  while(curr.right is not None):
+    parent = subtree
+    curr = subtree.right
+
+  if curr.left is None:
+    parent.right = None
+  else:
+    parent.right = curr.left
+
+  return True
+```
+
+</details>
